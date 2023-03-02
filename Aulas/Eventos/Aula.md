@@ -1,0 +1,1 @@
+Defer : Atributo que diz que os script vão ser carregados apos a pagina ser carregada por completo  
