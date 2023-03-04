@@ -43,3 +43,32 @@ document.getElementById('delLocal').addEventListener('click',function(){
         alert('Operação cancelada')
     }
 })
+
+/* Cookie */
+
+
+/* Pega a Data Atual e Adiciona a quantidade de dias para o Cookie Manter na maquina */
+function addDaysToDate(date , days){
+    var res = new Date(date)
+    res.setDate(res.getDate() + days)
+    return res
+}
+
+var tmpDate = new Date()
+tmpDate = addDaysToDate(tmpDate,3)
+console.log(tmpDate)
+
+
+/* ----- FIM Function Date ----- */
+
+/* Adicionando Cookie */
+
+document.getElementById('cookieBtn').addEventListener('click',function(){
+    const input = document.getElementById('cookie')
+    // Cookies : cookieName=value; expires=UTCStringDate; path=/CAMINHO
+    const cookie = 'info_cookie=' + input.value + ';'
+    const expiration = 'expires=' + tmpDate + ';'
+    const path = 'path=/;'
+    document.cookie = cookie + expiration + path
+    input.value = '' 
+})
