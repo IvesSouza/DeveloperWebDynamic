@@ -44,3 +44,19 @@ const multiply = (a,b) => a*b
 
 
 ```
+
+## Operador Spread
+
+- Operador que permite espalhar um elemento , como , string , object , array ... etc,
+- Utiliza tres pontos para chamar : ...Objecto
+- Pode ser utilizado para diversos fins
+
+``` js
+const town = ['prateleira','sacada','computador']
+console.log(town) // Resultado = ['prateleira','sacada','computador']
+console.log(...town) // Resultado = prateleira sacada computador
+
+
+```
+
+
