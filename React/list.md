@@ -40,3 +40,16 @@ function App() {
 }
 
 ```
+
+## Uso do Fragment
+
+Importe o Fragment dentro da biblioteca do React para fazer uso do mesmo:
+como Fragment permite que não seja renderizado aquele bloco de escrito que envolve o objeto HTML. 
+Todo Elemento obriga a está dentro de um elemento ou nó no HTML , digo quando tem mais de 1 Objeto .. 
+O fragment permite que não tenhamos esse elemento que envolve , como um div , e permite que possamos colocar varios elementos dentro de um local apenas
+
+```js
+
+import React , {fragment} from 'react'
+
+```

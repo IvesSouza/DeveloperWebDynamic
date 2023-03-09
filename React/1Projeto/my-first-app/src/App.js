@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import HelloWord1 from './DevJR1';
+import Fuc from './component/Planeajs/Planetas';
 
 function App() {
   return (
     <div>
-      <HelloWord1/>
+      <Fuc/>
     </div>
   );
 }
